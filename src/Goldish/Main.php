@@ -27,8 +27,8 @@ class Main extends PluginBase implements Listener{
           $name = $player->getName();
                     $event->setJoinMessage(TextFormat::GREEN."{$name} joined the server-name!");
           }
-          public function getBed(){
+          public function getBed(PlayerBedEnterEvent $event){
 		return $this->bed;
-          $this->getPlayer()->getServer()->broadcastMessage(TextFormat::AQUA."$name in bed!");
+          $event->getPlayer()->getServer()->broadcastMessage(TextFormat::AQUA."$name is in bed!");
           }
 }
