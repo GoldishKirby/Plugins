@@ -24,12 +24,9 @@ class Main extends PluginBase implements Listener{
           public function onJoin(PlayerJoinEvent $event){
           $player = $event->getPlayer();
           $name = $player->getName();
-                    $this->getServer()->broadcastMessage(TextFormat::GREEN."$name joined the server-name!");
+                    $event->setJoinMessage(TextFormat::GREEN."{$name} joined the server-name!");
           }
           public function __construct(Player $player, Block $bed){
 		                $this->getServer()->broadcastMessage(TextFormat::GREEN."$player is now in $bed!");
 		      }
 }
-		      
-          
-   
