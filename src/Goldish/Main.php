@@ -28,8 +28,6 @@ class Main extends PluginBase implements Listener{
                     $this->getServer()->broadcastMessage(TextFormat::GREEN."$name joined the server-name!");
           }
           public function __construct(Player $player, Block $bed){
-		      $this->player = $player;
-		      $this->bed = $bed;
 		                $this->getServer()->broadcastMessage(TextFormat::GREEN."$player is now in $bed!");
 		      }
 }
