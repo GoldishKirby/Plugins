@@ -1,6 +1,6 @@
 <?php
 
-namespace Goldish\Main;
+namespace Goldish;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerJoinEvent;
