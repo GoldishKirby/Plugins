@@ -9,6 +9,7 @@ use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\player\PlayerBedEnterEvent;
+use pocketmine\player
 
 class Main extends PluginBase implements Listener{
 
