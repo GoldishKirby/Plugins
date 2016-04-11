@@ -2,4 +2,4 @@ name: Plugin
 author: Goldish_Banana
 api: [1.14.0, 2.0.0]
 version: 1.0
-main: Goldish\Main.php
+main: Goldish\Main
