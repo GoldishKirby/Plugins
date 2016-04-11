@@ -9,6 +9,7 @@ use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\player\PlayerBedEnterEvent;
+use pocketmine\player;
 
 class Main extends PluginBase implements Listener{
 
@@ -26,7 +27,8 @@ class Main extends PluginBase implements Listener{
           $name = $player->getName();
                     $event->setJoinMessage(TextFormat::GREEN."{$name} joined the server-name!");
           }
-          public function __construct(Player $player, Block $bed){
-		                $this->getServer()->broadcastMessage(TextFormat::GREEN."$player is now in $bed!");
-		      }
+          public function getBed(){
+		return $this->bed;
+          $this->getPlayer()->getServer()->broadcastMessage(TextFormat::AQUA."$name in bed!");
+          }
 }
